@@ -1,0 +1,83 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Poppins", sans-serif;
+
+  font-family: "Sedgwick Ave Display", cursive;
+  font-family: "Tektur", sans-serif;
+  font-family: "Young Serif", serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border: 2px solid rgb(83, 83, 244);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  height: 500px;
+  width: 327px;
+  overflow: hidden;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  background-color: white;
+}
+.stories {
+  /* display: flex; */
+  align-items: center;
+  /* background-color: rgb(255, 62, 62); */
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+.story {
+  /* position: relative; */
+  top: 50%;
+  display: inline-block;
+  /* margin: 10px; */
+  /* padding: 10px; */
+  height: 75px;
+  width: 75px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid red;
+  /* padding: ; */
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+.screen {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  border-radius: 10px;
+}
